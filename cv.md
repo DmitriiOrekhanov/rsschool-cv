@@ -34,7 +34,7 @@ Task: _Given a list lst and a number N, create a new list that contains each num
 
 ```Javascript
 const deleteNth = (arr, x) => {
-  var count = {};
+  let count = {};
   return arr.filter(a => {
     count[a] = ~~count[a] + 1;
     return count[a] <= x;
